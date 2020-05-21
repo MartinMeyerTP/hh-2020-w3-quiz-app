@@ -1,5 +1,14 @@
+
+
+.card__container {
+  // display: grid;
+  // gap: 20px;
+  overflow: scroll;
+  // padding: 20px;
+}
+
 .card {
-	display: flex-column;
+	display: flex;
   margin: 20px auto;
 	padding: 0 30px;
   width: 55vh;
@@ -7,7 +16,7 @@
 	border-radius: 5px;
 	background: #f5f5f5;
 	box-shadow: 2px -2px 2px 1px rgba(255, 255, 255, 0.4)	
-}
+} 
 
 .card__h2 {
 	margin-top: 20px;
