@@ -15,5 +15,8 @@
 }
 
 .navigation__link--active {
-  background: hotpink;
+  background: magenta;
+}
+.navigation__link--active:hover {
+  background: yellow ;
 }
