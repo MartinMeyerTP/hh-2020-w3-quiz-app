@@ -4,6 +4,9 @@
 }
 
 .card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
   margin: 20px auto;
 	padding: 0 30px;
   width: 53vh;
@@ -32,7 +35,8 @@
 
 .card__button {
 	display: block;
-	margin: 0 auto;
+	justify-self: center;
+	align-self: center;
 	width: 40%;
 	padding: 6px;
 	text-align: center;
@@ -42,20 +46,27 @@
 }
 
 .card__answers {
-	display: grid;
-	grid-template-rows: 100%;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+
+	// display: grid;
+	// gap: 5px;
+	// grid-template-rows: 100%;
+	// grid-template-columns: 2fr 2fr 2fr 2fr;
 }
 
 .card__answers > li {
-	width: 80%;
+	// width: 100%;
+	align-content: space-between;
 	padding: 3px;
 	margin-top: 2px;
-	/*argin-left: -40px;*/
+	margin-left: -40px;
 	margin-right: 5px;
 	border: 1px groove purple;
 	border-radius: 5px;
-	text-align: center;
+	text-align: left;
 	list-style-type: none;
 	background: white;
 	color: purple;
